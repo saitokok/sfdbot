@@ -1,4 +1,4 @@
-#事前準備
+# 事前準備
 
 `cd {このソースがあるところ}`
 
@@ -9,6 +9,6 @@
 sfdbot.rb に　'YOUR_API_KEY', 'YOUR_API_SECRET' に自分のやつをセット
 
 
-#実行
+# 実行
 
 `. exec.sh`
