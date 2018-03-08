@@ -21,7 +21,7 @@ puts "今の乖離率は#{(est - 1) * 100}%だしん"
 
 if position && position['side'] == 'BUY'
   if est > sellrate || est < losscut
-    puts '乖離率が閾値を超過したので売るしん' if est > (sfd + 1.003)
+    puts '乖離率が閾値を超過したので売るしん' if est > sellrate
     puts '乖離率が減少したので売るしん' if est < losscut
     private_client.send_child_order(product_code: 'FX_BTC_JPY', child_order_type: 'MARKET', side: "SELL", size: position['size'])
     sleep 60
